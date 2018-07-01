@@ -153,7 +153,7 @@ function openDatabase() {
       alert("Trying to get something for nothing I see. Crafty fellow. The value field is empty!");
     
     }
-    else if(valueData.value.trim()==""){
+    else if(valueData.value.trim()=="" && valueData.value.length>0){
       alert("** yawns airily ** I see what you're trying to do Neil Armstrong. No 'space' allowed here!");
 
     }        
@@ -191,7 +191,7 @@ function openDatabase() {
       //thats okay, do nothing. have a coffee my friend. let it be lol
 
     }
-    else if(valueData.value.trim()==""){
+    else if(valueData.value.trim()=="" && valueData.value.length>0){
       alert("** yawns airily ** I see what you're trying to do Neil Armstrong. No 'space' allowed here!");
 
     }   
