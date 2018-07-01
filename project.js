@@ -152,7 +152,11 @@ function openDatabase() {
     if(valueData.value === ""){
       alert("Trying to get something for nothing I see. Crafty fellow. The value field is empty!");
     
-    }     
+    }
+    else if(valueData.value.trim()==""){
+      alert("** yawns airily ** I see what you're trying to do Neil Armstrong. No 'space' allowed here!");
+
+    }        
     else if (parseFloat(valueData.value)<0 ){
       alert("Tsk tsk tsk! Positive amounts only! Smh. Pessimists ");
       
@@ -187,6 +191,10 @@ function openDatabase() {
       //thats okay, do nothing. have a coffee my friend. let it be lol
 
     }
+    else if(valueData.value.trim()==""){
+      alert("** yawns airily ** I see what you're trying to do Neil Armstrong. No 'space' allowed here!");
+
+    }   
 
     else if (parseFloat(valueData.value)<0 ){
       alert("Tsk tsk tsk! Positive amounts only! Smh. Pessimists ");
